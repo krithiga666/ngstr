@@ -1,0 +1,17 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Enter Employee ID</mat-label>
+      <input matInput id="id" type="text" #id>
+    </mat-form-field>
+    <div class="example-button-row">
+      <div class="example-flex-container">
+        <div class="example-button-container">
+          <button mat-fab color="primary" aria-label="Example icon button with a delete icon">    
+            <mat-icon (click)="ondelete(id.value)">Delete</mat-icon>
+          </button>
+        </div>
+    </div>
+  </div>
+</form>
+
+

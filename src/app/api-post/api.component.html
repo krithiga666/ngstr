@@ -1,0 +1,9 @@
+<div style="padding: 13px;">
+      <mat-spinner *ngIf="employees.length === 0"></mat-spinner>
+            <mat-card *ngFor="let sample of employees" style="margin-top:10px;">
+                  <mat-card-header>
+                        <mat-card-title>{{sample.name}}</mat-card-title>
+                        <mat-card-subtitle>{{sample.jobtype}}</mat-card-subtitle>
+                  </mat-card-header>
+           </mat-card>
+</div>
